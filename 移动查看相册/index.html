@@ -72,7 +72,7 @@ li{float:left;width:100px;height:100px;overflow:hidden;}
 	</div>
 	<script type="text/javascript" src="hammer.min.js"></script>
 	<script>
-	var total=9,zWin=window.innerWidth, zHei=window.innerHeight;//获取窗口的宽高
+	var total=9,zWin=window.innerWidth, zHei=window.innerHeight;
 	var container=document.getElementById("container")
 	var render=function(){
 		var padding=2,winWidth=zWin;
@@ -95,11 +95,8 @@ li{float:left;width:100px;height:100px;overflow:hidden;}
 				cvs.drawImage(this,0,0);
 			}
 			imageObj.src=imgSrc;
-
-
 		}
 		container.innerHTML=tmpl;
-
 	}
 	render();
 	var lContaner=document.getElementById("large_container");
@@ -112,7 +109,6 @@ li{float:left;width:100px;height:100px;overflow:hidden;}
 	 	var imgsrc='img/0'+id+'.large.jpg';
 	 	var imageObj=new Image();
 	 	imageObj.onload=function(){
-
 	 		var w=parseInt(this.width);
 	 		var h=parseInt(this.height);
 	 		var realw=w*zHei/h;
@@ -133,7 +129,6 @@ li{float:left;width:100px;height:100px;overflow:hidden;}
 	 		callback&&callback();
 	 	}
 	 	imageObj.src=imgsrc;
-
 	}
 	var cid;
 	container.addEventListener("click",function(e){
@@ -145,7 +140,6 @@ li{float:left;width:100px;height:100px;overflow:hidden;}
 	lContaner.addEventListener("click",function(){
 		this.classList.add("hide");
 	})
-
 	var mv=new Hammer(lContaner);
 	mv.get("swipe").set({direction:Hammer.DIRECTION_ALL});
 	mv.on("swipeleft",function(ev){
