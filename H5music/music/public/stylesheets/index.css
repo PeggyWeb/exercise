@@ -12,6 +12,9 @@ a {
 }
 header{left:0;top:0;right:0;height:150px;border:1px solid #fff;}
 header h1{font-size:40px;height:60px;line-height:60px;}
+#type {list-style:none;border-radius:5px;}
+#type li{display:inline-block;min-width:71px;padding:5px 10px;border:1px solid #fff;}
+#type li.selected{background:#fff;color:#000;}
 .left,.right{position:absolute;}
 .left{left:10px;top:220px;bottom:10px;width:200px;border:solid #fff 1px ;}
 .left ul{overflow:auto;}
