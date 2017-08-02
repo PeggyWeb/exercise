@@ -1,2 +1,0 @@
-# exercise
-some daily exercise
