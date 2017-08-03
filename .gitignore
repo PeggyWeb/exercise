@@ -1,3 +1,4 @@
 #ignore these files 
 H5music/music/node_modules/
-H5music/.idea
+*/.idea
+.gitignore
